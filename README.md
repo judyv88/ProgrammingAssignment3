@@ -21,32 +21,31 @@ You should create one R script called run_analysis.R that does the following.
     Appropriately labels the data set with descriptive variable names.
     From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
+Get the Data
+1.Download the file and put the file in the data folder
+2.Unzip the file
+3.Unzipped files are now in the folderUCI HAR Dataset and get the list from this dataset
 
-### Get the Data
-## 1.Download the file and put the file in the data folder
-## 2.Unzip the file
-## 3.Unzipped files are now in the folderUCI HAR Dataset and get the list from this dataset
+Read data from the targeted files
+1. Read data from the files into the variables
+2. Look at the properties of the above varibles
 
-### Read data from the targeted files
-## 1. Read data from the files into the variables
-## 2. Look at the properties of the above varibles
+Merge the training and the test sets to create one dataset
+1. Merge the data tables by rows
+2. Set names to variables
+3. Merge columns to get the data frame Data for all data
 
-### Merge the training and the test sets to create one dataset
-## 1. Merge the data tables by rows
-## 2. Set names to variables
-## 3. Merge columns to get the data frame Data for all data
+Extract only the mean and standard deviation for each measurement
+1. Subset Name of Features by measurements on the mean and standard deviation
+2. Subset the data frame Data by seleted names of Features
+3. Check the structures of the data frame Data
 
-### Extract only the mean and standard deviation for each measurement
-## 1. Subset Name of Features by measurements on the mean and standard deviation
-## 2. Subset the data frame Data by seleted names of Features
-## 3. Check the structures of the data frame Data
+Use descriptive activity names to name the activities in the dataset
+1. Read descriptive activity names from “activity_labels.txt”
+2. Factorize Variable activity in the data frame Data using descriptive activity names
 
-### Use descriptive activity names to name the activities in the dataset
-## 1. Read descriptive activity names from “activity_labels.txt”
-## 2. Factorize Variable activity in the data frame Data using descriptive activity names
+Appropriately label the dataset with descriptive variable names
 
-### Appropriately label the dataset with descriptive variable names
-
-### Create a tidy data set 
-## Produce Codebook
+Create a tidy data set 
+Produce Codebook
 
