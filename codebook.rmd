@@ -1,1 +1,28 @@
 # Variable Description
+
+The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained:
+
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+Here are the data for the project:
+
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+For the purposes of this project, the files in the Inertial Signals folders are not used. The files that will be used to load data are listed as follows:
+
+    test/subject_test.txt
+    test/X_test.txt
+    test/y_test.txt
+    train/subject_train.txt
+    train/X_train.txt
+    train/y_train.txt
+
+From the dataset, we can see:
+
+    Values of Varible Activity consist of data from “Y_train.txt” and “Y_test.txt”
+    values of Varible Subject consist of data from “subject_train.txt” and subject_test.txt"
+    Values of Varibles Features consist of data from “X_train.txt” and “X_test.txt”
+    Names of Varibles Features come from “features.txt”
+    levels of Varible Activity come from “activity_labels.txt”
+
+So we will use Activity, Subject and Features as part of descriptive variable names for data in data frame.
